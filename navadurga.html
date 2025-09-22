@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navadurga</title>
+    <link rel="stylesheet" href="css/navadurga.css">
+</head>
+<body>
+    <header>
+        <h1>Navadurga Forms</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mantras.html">Mantras</a></li>
+                <li><a href="festivals.html">Festivals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="navadurga-grid">
+        <div class="card" onclick="openModal('shailaputri')">
+            <img src="images/shailaputri.jpg" alt="Shailaputri">
+            <h3>Shailaputri</h3>
+        </div>
+        <div class="card" onclick="openModal('brahmacharini')">
+            <img src="images/brahmacharini.jpg" alt="Brahmacharini">
+            <h3>Brahmacharini</h3>
+        </div>
+        <div class="card" onclick="openModal('chandraghanta')">
+            <img src="images/chandraghanta.jpg" alt="Chandraghanta">
+            <h3>Chandraghanta</h3>
+        </div>
+        <div class="card" onclick="openModal('kushmanda')">
+            <img src="images/kushmanda.jpg" alt="Kushmanda">
+            <h3>Kushmanda</h3>
+        </div>
+        <div class="card" onclick="openModal('skandamata')">
+            <img src="images/skandamata.jpg" alt="Skandamata">
+            <h3>Skandamata</h3>
+        </div>
+        <div class="card" onclick="openModal('katyayani')">
+            <img src="images/katyayani.jpg" alt="Katyayani">
+            <h3>Katyayani</h3>
+        </div>
+        <div class="card" onclick="openModal('kalaratri')">
+            <img src="images/kalaratri.jpg" alt="Kalaratri">
+            <h3>Kalaratri</h3>
+        </div>
+        <div class="card" onclick="openModal('mahagauri')">
+            <img src="images/mahagauri.jpg" alt="Mahagauri">
+            <h3>Mahagauri</h3>
+        </div>
+        <div class="card" onclick="openModal('siddhidatri')">
+            <img src="images/siddhidatri.jpg" alt="Siddhidatri">
+            <h3>Siddhidatri</h3>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="form-name"></h2>
+            <img id="form-img" src="" alt="">
+            <p id="form-desc"></p>
+            <audio id="form-audio" controls>
+                <source src="" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <script src="js/navadurga.js"></script>
+</body>
+</html>
