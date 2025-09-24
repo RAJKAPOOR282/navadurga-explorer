@@ -1,52 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maa Durga Explorer</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navadurga Explorer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Sahitya:wght@400;700&family=Tiro+Devanagari+Hindi&display.swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<header>
-    <h1>🌸 Jai Mata Di 🌸</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="navadurga.html">Navadurga</a></li>
-            <li><a href="mantras.html">Mantras</a></li>
-            <li><a href="festivals.html">Festivals</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
-        </ul>
-    </nav>
-</header>
+<body class="text-gray-800">
 
-<section class="banner">
-    <img src="images/maa-durga-banner.jpg" alt="Maa Durga Banner" class="floating">
-    <p>Explore the divine forms of Maa Durga and her sacred mantras</p>
-    <a href="navadurga.html" class="btn">Explore Navadurga</a>
-</section>
-
-<section class="features">
-    <div class="feature-card floating-card">
-        <h3>Divine Forms</h3>
-        <p>Discover Navadurga – Nine forms of Maa Durga with details & stories.</p>
+    <div id="preloader">
+        <div class="loader-om font-devanagari">ॐ</div>
     </div>
-    <div class="feature-card floating-card">
-        <h3>Mantras</h3>
-        <p>Listen to powerful Durga mantras and experience divine energy.</p>
-    </div>
-    <div class="feature-card floating-card">
-        <h3>Festivals</h3>
-        <p>Learn about Navratri, Durga Puja, Dussehra, and their rituals.</p>
-    </div>
-</section>
 
-<footer>
-    <p>&copy; 2025 Raj Kapoor | Maa Durga Explorer</p>
-</footer>
+    <header class="bg-white/50 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-display" style="color: var(--text-primary);">नवदुर्गा एक्सप्लोरर</h1>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#forms" class="nav-link">Forms</a>
+                <a href="#bhakti" class="nav-link">Bhakti Sangrah</a>
+                <a href="#festivals" class="nav-link">Festivals</a>
+                <a href="#puja" class="nav-link">Puja Vidhi</a>
+                <a href="#quiz" class="nav-link">Quiz</a>
+            </div>
+             <button id="mobile-menu-button" class="md:hidden p-2 rounded-md" style="color: var(--text-primary);">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block nav-link py-2">Home</a>
+            <a href="#forms" class="block nav-link py-2">Forms</a>
+            <a href="#bhakti" class="block nav-link py-2">Bhakti Sangrah</a>
+            <a href="#festivals" class="block nav-link py-2">Festivals</a>
+            <a href="#puja" class="block nav-link py-2">Puja Vidhi</a>
+            <a href="#quiz" class="block nav-link py-2">Quiz</a>
+        </div>
+    </header>
 
-<script src="js/script.js"></script>
+    <main>
+        <section id="home" class="page-section min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('/navadurga-explorer/images/maa.jpg');">
+            <div class="bg-gradient-to-t from-black/60 to-transparent absolute inset-0"></div>
+            <div class="text-center text-white z-10 p-4">
+                <h2 class="text-6xl md:text-8xl font-display jai-mata-di font-devanagari mb-4">जय माता दी</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto" style="color: #FDF6E3;">देवी के नौ पवित्र रूपों और उनकी दिव्य ऊर्जा की एक गहन यात्रा।</p>
+                <div class="mt-10">
+                     <a href="#forms" class="glowing-btn bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-lg text-lg border-2 border-amber-400" style="background-color: var(--accent-secondary); border-color: var(--accent-primary);">नवदुर्गा दर्शन</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="floral-separator"></div>
+
+        <section id="forms" class="page-section py-24 fade-in-section">
+            <div class="container mx-auto px-6">
+                 <div class="traditional-border">
+                    <h2 class="shimmer-title text-4xl lg:text-5xl font-display text-center mb-4" style="color: var(--text-primary);">नौ दिव्य स्वरूप</h2>
+                    <p class="text-center text-lg max-w-2xl mx-auto mb-16" style="color: var(--text-secondary);">देवी के प्रत्येक स्वरूप पर माउस ले जाकर उनकी कथा और मंत्र के बारे में जानें।</p>
+                    <div id="navadurga-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="floral-separator"></div>
+        
+        <section id="bhakti" class="page-section py-24 fade-in-section">
+             <div class="container mx-auto px-6">
+                <div class="traditional-border">
+                    <h2 class="shimmer-title text-4xl lg:text-5xl font-display text-center mb-4" style="color: var(--text-primary);">✨ भक्ति संग्रह</h2>
+                    <p class="text-center text-lg max-w-2xl mx-auto mb-12" style="color: var(--text-secondary);">नीचे दिए गए भक्ति संग्रह से चालीसा, आरती और कथा का पाठ करें।</p>
+                    <div id="bhakti-collection-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="floral-separator"></div>
+
+        <section id="festivals" class="page-section py-24 fade-in-section">
+             <div class="container mx-auto px-6">
+                <div class="traditional-border">
+                    <h2 class="text-4xl lg:text-5xl font-display text-center mb-16" style="color: var(--text-primary);">देवी के पर्व</h2>
+                    <div class="max-w-4xl mx-auto p-2">
+                        <div class="flex justify-center border-b-2" style="border-color: var(--border-color);">
+                            <button class="festival-tab p-4 font-semibold text-lg" data-tab="navratri">नवरात्रि</button>
+                            <button class="festival-tab p-4 font-semibold text-lg" data-tab="durga-puja">दुर्गा पूजा</button>
+                            <button class="festival-tab p-4 font-semibold text-lg" data-tab="dussehra">दशहरा</button>
+                        </div>
+                        <div id="festival-content" class="mt-8 p-4 md:p-6 min-h-[150px]">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="floral-separator"></div>
+
+        <section id="puja" class="page-section py-24 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="traditional-border">
+                    <h2 class="shimmer-title text-4xl lg:text-5xl font-display text-center mb-8" style="color: var(--text-primary);">दैनिक पूजा विधि</h2>
+                    
+                    <div class="max-w-4xl mx-auto text-lg leading-relaxed">
+                        <p class="text-center mb-10" style="color: var(--text-secondary);">
+                            मां दुर्गा के सभी नौ रूपों की पूजा नवरात्रि के दौरान की जाती है, और इसके लिए एक सामान्य विधि अपनाई जाती है जिसमें ब्रह्म मुहूर्त में उठकर स्नान, कलश स्थापना, दीपक जलाना, मां को वस्त्रादि अर्पित करना, मंत्र जाप और आरती शामिल हैं. हर स्वरूप की पूजा के लिए विशिष्ट <strong style="color: var(--accent-secondary);">भोग</strong>, <strong style="color: var(--accent-secondary);">रंग</strong>, और <strong style="color: var(--accent-secondary);">मंत्र</strong> हो सकते हैं, जैसे मां ब्रह्मचारिणी के लिए मिश्री का भोग या मां स्कंदमाता को केले का भोग.
+                        </p>
+
+                        <div class="my-8 border-t-2 border-dashed" style="border-color: var(--border-color);"></div>
+
+                        <h3 class="text-3xl font-display text-center mb-6" style="color: var(--text-primary);">पूजा की सामान्य विधि</h3>
+                        <ol class="space-y-5 font-devanagari text-left" style="color: var(--text-secondary);">
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">१.</span><span><strong style="color: var(--text-primary);">स्नान और संकल्प:</strong> सूर्योदय के बाद स्नान करें और स्वच्छ वस्त्र धारण करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">२.</span><span><strong style="color: var(--text-primary);">पूजा स्थल की तैयारी:</strong> पूजा स्थल पर एक लकड़ी की चौकी पर लाल कपड़ा बिछाएं और उस पर मां दुर्गा की मूर्ति या तस्वीर स्थापित करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">३.</span><span><strong style="color: var(--text-primary);">कलश स्थापना:</strong> एक पात्र में जौ बोएं और उसके ऊपर जल से भरा कलश स्थापित करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">४.</span><span><strong style="color: var(--text-primary);">दीपक जलाना:</strong> मां दुर्गा की मूर्ति के सामने घी का दीपक जलाएं।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">५.</span><span><strong style="color: var(--text-primary);">अभिषेक:</strong> मां की मूर्ति पर गंगाजल छिड़कें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">६.</span><span><strong style="color: var(--text-primary);">संवर्धन:</strong> मां को अक्षत, सिंदूर, लाल पुष्प और अन्य सामग्रियाँ अर्पित करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">७.</span><span><strong style="color: var(--text-primary);">मंत्र जाप:</strong> ॐ श्री दुर्गाय नमः जैसे बीज मंत्रों का जाप करें, या उस दिन के विशेष मंत्र का जाप करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">८.</span><span><strong style="color: var(--text-primary);">पाठ और आरती:</strong> दुर्गा चालीसा, दुर्गा सप्तशती का पाठ करें और फिर मां की आरती करें।</span></li>
+                            <li class="flex items-start"><span class="mr-3 text-2xl" style="color: var(--accent-secondary);">९.</span><span><strong style="color: var(--text-primary);">भोग और प्रसाद:</strong> मां को भोग लगाएं और प्रसाद बांटें।</span></li>
+                        </ol>
+
+                        <div class="my-8 border-t-2 border-dashed" style="border-color: var(--border-color);"></div>
+
+                        <h3 class="text-3xl font-display text-center mb-6" style="color: var(--text-primary);">कुछ मुख्य स्वरूप और विशिष्ट विधान</h3>
+                        <ul class="space-y-4 font-devanagari" style="color: var(--text-secondary);">
+                           <li class="flex items-start"><i data-feather="gift" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--accent-secondary);"></i><span><strong style="color: var(--text-primary);">मां ब्रह्मचारिणी (दूसरा दिन):</strong> मिश्री, गुड़ या शहद का भोग लगाएं।</span></li>
+                           <li class="flex items-start"><i data-feather="gift" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--accent-secondary);"></i><span><strong style="color: var(--text-primary);">मां कुष्मांडा (चौथा दिन):</strong> मालपुओं का भोग लगाएं।</span></li>
+                           <li class="flex items-start"><i data-feather="gift" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--accent-secondary);"></i><span><strong style="color: var(--text-primary);">मां स्कंदमाता (पांचवां दिन):</strong> सफेद या पीले फूल अर्पित करें, केले का भोग लगाएं।</span></li>
+                           <li class="flex items-start"><i data-feather="gift" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--accent-secondary);"></i><span><strong style="color: var(--text-primary);">मां कालरात्रि:</strong> गुड़हल या गुलाब का फूल अर्पित करें और गुड का भोग लगाएं।</span></li>
+                           <li class="flex items-start"><i data-feather="gift" class="w-5 h-5 mr-3 mt-1 flex-shrink-0" style="color: var(--accent-secondary);"></i><span><strong style="color: var(--text-primary);">मां महागौरी:</strong> नारियल और सफेद रंग का विशेष भोग अर्पित करें।</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="floral-separator"></div>
+
+        <section id="quiz" class="page-section py-24 fade-in-section">
+            <div class="container mx-auto px-6">
+                <div class="traditional-border">
+                     <h2 class="shimmer-title text-4xl lg:text-5xl font-display text-center mb-12" style="color: var(--text-primary);">ज्ञान परीक्षा</h2>
+                     <div id="quiz-container" class="max-w-2xl mx-auto p-8 rounded-xl transition-all duration-500 relative overflow-hidden">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-white py-8" style="background-color: var(--text-primary);">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg">&copy; 2025 Navadurga Explorer. All Rights Reserved.</p>
+            <p class="text-sm text-gray-300 mt-2">A humble offering to the Divine Mother.</p>
+        </div>
+    </footer>
+    
+    <button id="scrollToTopBtn" class="glowing-btn fixed bottom-5 right-5 text-white p-3 rounded-full shadow-lg transition-opacity opacity-0 z-50" style="background-color: var(--accent-secondary);">
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <div id="modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="modal-content" class="rounded-xl shadow-2xl w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] overflow-hidden flex flex-col transform scale-95 transition-all duration-300 traditional-border" style="background-color: var(--bg-primary);">
+            <div class="flex justify-between items-center p-5 border-b" style="border-color: var(--border-color);">
+                <h3 id="modal-title" class="text-3xl font-display" style="color: var(--text-primary);"></h3>
+                <button id="modal-close" class="hover:text-gray-800 transition-transform hover:rotate-90" style="color: var(--text-primary);">
+                    <i data-feather="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto no-scrollbar">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <img id="modal-image" src="" alt="Deity Image" class="w-full md:w-2/5 h-auto object-cover rounded-lg shadow-md border-4" style="border-color: var(--border-color);">
+                    <div class="flex-1">
+                        <p class="font-bold text-lg mb-2 flex items-center"><i data-feather="shield" class="mr-2 h-5 w-5"></i>अस्त्र: <span id="modal-weapon" class="font-normal ml-2" style="color: var(--text-secondary);"></span></p>
+                        <p class="font-bold text-lg flex items-center"><i data-feather="star" class="mr-2 h-5 w-5"></i>महत्व: <span id="modal-significance" class="font-normal ml-2" style="color: var(--text-secondary);"></span></p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h4 class="text-2xl font-display" style="color: var(--text-primary);">कथा</h4>
+                    <p id="modal-story" class="whitespace-pre-line leading-relaxed text-lg mt-3" style="color: var(--text-secondary);"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mantra-modal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="mantra-modal-content" class="rounded-xl shadow-2xl w-11/12 max-w-lg text-center transform scale-95 transition-all duration-300 traditional-border p-8" style="background-color: var(--bg-primary);">
+            <h3 id="mantra-modal-title" class="text-4xl font-display mb-6" style="color: var(--text-primary);"></h3>
+            <div class="p-6 rounded-lg" style="background-color: rgba(160, 82, 45, 0.1);">
+                <p class="font-bold font-devanagari text-xl mb-2" style="color: var(--accent-secondary);">मंत्र:</p>
+                <p id="mantra-modal-text" class="text-3xl font-devanagari"></p>
+            </div>
+            <button id="mantra-modal-close" class="glowing-btn mt-8 text-white font-bold py-2 px-8 rounded-lg transition duration-300 text-lg" style="background-color: var(--accent-secondary);">बंद करें</button>
+        </div>
+    </div>
+    
+    <div id="content-modal" class="modal fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="content-modal-content" class="rounded-xl shadow-2xl w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] overflow-hidden flex flex-col transform scale-95 transition-all duration-300 traditional-border" style="background-color: var(--bg-primary);">
+            <div class="flex justify-between items-center p-5 border-b" style="border-color: var(--border-color);">
+                <h3 id="content-modal-title" class="text-3xl font-display" style="color: var(--text-primary);"></h3>
+                <button id="content-modal-close" class="hover:text-gray-800 transition-transform hover:rotate-90" style="color: var(--text-primary);">
+                    <i data-feather="x" class="w-8 h-8"></i>
+                </button>
+            </div>
+            <div id="content-modal-body" class="p-6 overflow-y-auto no-scrollbar whitespace-pre-line text-lg leading-relaxed font-devanagari" style="color: var(--text-secondary);">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
 </body>
 </html>
